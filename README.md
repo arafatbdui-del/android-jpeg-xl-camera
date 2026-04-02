@@ -49,3 +49,7 @@ adb pull /sdcard/Download/JxlCamera .
 
 ### Files Not Found
 - Check the ADB path correctly. The path might vary slightly based on the device, but it should be under `Download/JxlCamera`.
+
+---
+
+This app relies on https://github.com/awxkee/jxl-coder huge thanks to Radzivon Bartoshyk!
