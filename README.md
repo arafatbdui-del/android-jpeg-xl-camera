@@ -3,6 +3,8 @@
 ## Overview
 The JPEG XL Camera app is a modern Android application designed to capture photos and save them in the high-efficiency JPEG XL (.jxl) format. It uses Jetpack Compose for a premium UI and CameraX for reliable camera capture.
 
+To view your files, I recommend Fossify Gallery.
+
 ## App Goal
 To provide a fast, high-quality camera experience that leverages the benefits of the JPEG XL format.
 
