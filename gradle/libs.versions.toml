@@ -1,0 +1,78 @@
+[versions]
+kotlin = "2.3.0"
+androidGradlePlugin = "9.0.0"
+androidTools = "32.0.0"
+ksp = "2.3.4"
+
+# AndroidX
+androidxComposeBom = "2025.09.01"
+androidxComposeFoundation = "1.8.0-alpha07"
+androidxActivity = "1.9.3"
+androidxAppCompat = "1.7.0"
+androidxCore = "1.15.0"
+androidxLifecycle = "2.10.0"
+androidxNavigation = "2.8.5"
+androidxWork = "2.10.0"
+androidxDataStore = "1.2.0"
+
+# UI & Media
+coil = "2.7.0"
+accompanist = "0.37.0"
+jxlCoder = "2.2.0"
+
+# Testing
+junit4 = "4.13.2"
+androidxEspresso = "3.6.1"
+androidxUiAutomator = "2.3.0"
+robolectric = "4.16"
+roborazzi = "1.56.0"
+uiTestJunit4 = "1.9.0-rc01"
+
+# Data & Networking
+room = "2.8.3"
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+kotlinxSerializationJson = "1.8.0"
+
+# Other Utilities
+androidDesugarJdkLibs = "2.1.4"
+kotlinxCoroutines = "1.10.1"
+kotlinxDatetime = "0.6.1"
+protobuf = "4.29.2"
+jacoco = "0.8.12"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "androidxComposeFoundation" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "uiTestJunit4" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+
+# CameraX (Using standard versions if not specified, but let's assume standard compatible ones)
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version = "1.4.1" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version = "1.4.1" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version = "1.4.1" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version = "1.4.1" }
+
+# JXL
+jxl-coder = { group = "io.github.awxkee", name = "jxl-coder", version.ref = "jxlCoder" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit4" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version = "1.2.1" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
