@@ -9,7 +9,11 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - run: chmod +x gradlew && ./gradlew assembleDebug
+      - name: Give Gradle more memory
+        run: |
+          echo "org.gradle.jvmargs=-Xmx6g -XX:MaxMetaspaceSize=1g" >> gradle.properties
+          echo "android.useAndroidX=true" >> gradle.properties
+      - run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
         with:
           name: jxl-camera-apk
